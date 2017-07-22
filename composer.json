@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Lilessam\\Translationman": "src/"
+            "Lilessam\\Translationman\\": "src/"
         }
     },
     "minimum-stability": "dev",
