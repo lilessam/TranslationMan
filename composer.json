@@ -12,16 +12,12 @@
         "php": ">=5.4.0",
         "illuminate/support": "~5.0"
     },
-    "require-dev": {
-        "mockery/mockery": "dev-master",
-        "phpunit/phpunit": "^6.1"
-    },
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "Lilessam\\Translationman": "src/"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
