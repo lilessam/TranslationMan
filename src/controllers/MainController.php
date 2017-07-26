@@ -2,18 +2,14 @@
 
 namespace Lilessam\Translationman\Controllers;
 
-use App;
-use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\App;
 use Illuminate\Http\Request;
-use Lang;
+use Illuminate\Support\Facades\Lang;
+use Illuminate\Routing\Controller as BaseController;
 
-class MainController extends Controller
+class MainController extends BaseController
 {
-    /**
-     * Show the application welcome screen to the user.
-     *
-     * @return Response
-     */
+
     public function index()
     {
 

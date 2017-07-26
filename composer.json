@@ -15,7 +15,10 @@
     "autoload": {
         "psr-4": {
             "Lilessam\\Translationman\\": "src/"
-        }
+        },
+        "classmap": [
+        "vendor/lilessam/translationman/src/controllers"
+        ]
     },
     "minimum-stability": "stable"
 }

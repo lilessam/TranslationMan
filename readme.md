@@ -6,6 +6,10 @@ This small package give you all functionlaity you need to manage your laravel la
 3. Files' array modification with a simple form (Allows multi dimensional arrays with dots in the index column).
 #### Installation
 Via Composer `composer require lilessam/translationman`
+
+Add `Lilessam\Translationman\TranslationmanServiceProvider::class` to your providers array in `config/app.php`. 
+
+You will also have to set `resources/lang` folder permissions to 777.
 #### Publish Config and Views
 `php artisan vendor:publish --provider=Lilessam\Translationman\TranslationmanServiceProvider`
 Now views files will be published in `resources/views/vendor/translationman`.
@@ -16,6 +20,6 @@ When you publish the service provider files you will see `translationman.php` fi
 
 You can also provide a middleware for the package routes by modifying `middleware` in the config file.
 
-The `middleware` can be string or an array of middlewares.
+The `middleware` can be string or an array of middlewares (BUT CANNOT BE EMPTY STRING).
 
-###### Notice: All package views are pure Bootstrap forms and tables without any CSS. You have to integrate views files into your application theme.
+###### Notice: All package views are pure Bootstrap forms and tables without any CSS. You have to integrate views files into your application theme by extending your layouts.
