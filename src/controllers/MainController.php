@@ -149,7 +149,6 @@ class MainController extends BaseController
         $array = $this->getFileArray($request->keys, $request->values);
         $this->setFileContent($lang, $file, $array);
 
-        flash('The file has been saved !');
         return redirect()->back();
     }
 
