@@ -168,10 +168,10 @@ class MainController extends BaseController
         $log_a = "";
         foreach ($data as $key => $value) {
             if (is_array($value)) {
-                $log_a .= "'" . $key . "' => [
+                $log_a .= '"' . $key . '"'. "=> [
                 \t" . $this->array2string($value) . "], \n";
             } else {
-                $log_a .= "\t'" . $key . "' => '" . $value . "',\n";
+                $log_a .= "\t".'"' . $key . '" => "' . $value . '"'.",\n";
             }
 
         }
