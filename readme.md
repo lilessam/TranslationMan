@@ -23,3 +23,9 @@ You can also provide a middleware for the package routes by modifying `middlewar
 The `middleware` can be string or an array of middlewares (BUT CANNOT BE EMPTY STRING).
 
 ###### Notice: All package views are pure Bootstrap forms and tables without any CSS. You have to integrate views files into your application theme by extending your layouts.
+
+#### Working with VueJS Components
+If you would like to pass your language array to a VueJS component you need to use `json_lang` helper which will pass your lang array with no problems.
+```PHP
+<my-component :lang='{!! json_lang("components.mine") !!}}'></my-component>
+```
