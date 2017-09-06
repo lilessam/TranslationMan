@@ -1,5 +1,5 @@
 ### TranslationMan Package For Laravel
-This small package give you all functionlaity you need to manage your laravel language files with simple forms you can integrate in your application layout.
+This small package gives you all functionlaity you need to manage your laravel language files with simple forms you can integrate in your application layout.
 #### Features
 1. Lanaguages Creation/Deletion.
 2. Language Files Creation/Deletion.
@@ -27,5 +27,5 @@ The `middleware` can be string or an array of middlewares (BUT CANNOT BE EMPTY S
 #### Working with VueJS Components
 If you would like to pass your language array to a VueJS component you need to use `json_lang` helper which will pass your lang array with no problems.
 ```PHP
-<my-component :lang='{!! json_lang("components.mine") !!}}'></my-component>
+<my-component :lang='{!! json_lang("components.mine") !!}'></my-component>
 ```
