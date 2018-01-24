@@ -11,7 +11,7 @@ Add `Lilessam\Translationman\TranslationmanServiceProvider::class` to your provi
 
 You will also have to set `resources/lang` folder permissions to 777.
 #### Publish Config and Views
-`php artisan vendor:publish --provider=Lilessam\Translationman\TranslationmanServiceProvider`
+`php artisan vendor:publish --provider="Lilessam\Translationman\TranslationmanServiceProvider"`
 Now views files will be published in `resources/views/vendor/translationman`.
 
 You will realize that all files contains only basic bootstrap forms. You will have to integrate this forms as you like.
