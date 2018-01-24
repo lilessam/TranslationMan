@@ -4,6 +4,7 @@
             <a href="{{ route('translationman.index') }}">Translation Man - {{ $lang }} => {{ $file }}</a>
         </h3>
         <form method="post" action="{{ route('translations.saveFile', ['lang' => $lang, 'file' => $file]) }}">
+            {!! csrf_field() !!}
             <div class="row">
                 <div class="col-md-12">
                     <table class="table table-hover">

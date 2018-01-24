@@ -6,6 +6,7 @@
         <div class="row">
             <div class="col-md-12">
                 <form method="post" action="{{ route('translationman.postNewLang') }}">
+                    {!! csrf_field() !!}
                     <div class="form-group">
                         <label for="name">New Language Code (en, es, ar ..)</label>
                         <input type="text" name="name" id="name" class="form-control">
